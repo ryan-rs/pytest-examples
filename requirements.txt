@@ -1,0 +1,9 @@
+flake8
+ipython
+pytest
+pytest-cov
+pytest-mock
+pytest-helpers-namespace
+pytest-rpc
+rpc-zigzag
+magic-marker
