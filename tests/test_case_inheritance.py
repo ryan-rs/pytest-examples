@@ -27,35 +27,33 @@ def steps_setup_fixture():
 # ======================================================================================================================
 # Test Cases
 # ======================================================================================================================
-@pytest.mark.test_case_with_steps('ha')
-class TestSteps(object):
+@pytest.mark.test_case_with_steps
+class TestCaseParent(object):
+    """Verify that an automation engineer can create tests with steps."""
+
     @pytest.mark.jira('K8S-123')
     def test_step_one(self, steps_setup_fixture):
+        """Verify that step one passes."""
+
         assert type(steps_setup_fixture) is int
 
     @pytest.mark.jira('K8S-123')
     def test_step_two(self, steps_setup_fixture):
+        """Verify that step two fails."""
+
         assert type(steps_setup_fixture) is str
 
     @pytest.mark.jira('K8S-123')
     def test_step_three(self, steps_setup_fixture):
+        """Verify that step three is skipped."""
+
         assert type(steps_setup_fixture) is bool
 
 
-@pytest.mark.test_case_with_steps('ha')
-class TestStepsWithOnlySetup(object):
+@pytest.mark.test_case_with_steps
+class TestCaseChild(TestCaseParent):
     @pytest.mark.jira('K8S-123')
-    def test_setup_step(self, steps_setup_fixture):
-        assert type(steps_setup_fixture) is int
+    def test_step_four(self, steps_setup_fixture):
+        """Verify that step four is skipped."""
 
-    @pytest.mark.jira('K8S-123')
-    def test_step_one(self, steps_setup_fixture):
-        assert type(steps_setup_fixture) is int
-
-    @pytest.mark.jira('K8S-123')
-    def test_step_two(self, steps_setup_fixture):
-        assert type(steps_setup_fixture) is str
-
-    @pytest.mark.jira('K8S-123')
-    def test_step_three(self, steps_setup_fixture):
-        assert type(steps_setup_fixture) is bool
+        assert type(steps_setup_fixture) is float
