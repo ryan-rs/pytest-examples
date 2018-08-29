@@ -42,7 +42,7 @@ clean-venv: check-venv ## remove all packages from current virtual environment
 	@source virtualenvwrapper.sh && wipeenv || echo "Skipping wipe of environment"
 
 lint: ## check style with flake8
-	flake8 tests
+	@flake8 --exclude=*steps*,*inheritance* tests
 
 test: ## run unit tests quickly with the default Python
 	py.test tests
