@@ -1,9 +1,11 @@
 flake8
+flake8-filename
+flake8-pytest-mark
 ipython
+magic-marker
 pytest
 pytest-cov
 pytest-mock
 pytest-helpers-namespace
 pytest-rpc
 rpc-zigzag
-magic-marker
