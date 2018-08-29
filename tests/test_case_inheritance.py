@@ -28,7 +28,7 @@ def steps_setup_fixture():
 # Test Cases
 # ======================================================================================================================
 @pytest.mark.test_id('747b3284-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 @pytest.mark.test_case_with_steps
 class TestCaseParent(object):
     """Verify that an automation engineer can create tests with steps."""
@@ -51,7 +51,7 @@ class TestCaseParent(object):
 
 @pytest.mark.test_case_with_steps
 @pytest.mark.test_id('747b219a-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 class TestCaseChild(TestCaseParent):
     """Verify that an automation engineer can create inheritable tests."""
 

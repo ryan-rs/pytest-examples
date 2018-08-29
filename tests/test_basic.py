@@ -40,7 +40,7 @@ def raise_exception(number):
 # Test Cases
 # ======================================================================================================================
 @pytest.mark.test_id('747bda72-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_inc():
     """Verify that 'inc' actually works!"""
 
@@ -48,7 +48,7 @@ def test_inc():
 
 
 @pytest.mark.test_id('747bd6a8-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_hide_the_word():
     """Verify that the hidden word is inside the string."""
 
@@ -58,7 +58,7 @@ def test_hide_the_word():
 
 
 @pytest.mark.test_id('747bd298-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_existence():
     """Verify that the hidden word is inside the string."""
 
@@ -79,7 +79,7 @@ def test_existence():
 
 
 @pytest.mark.test_id('747bce74-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_zipping():
     """Verify a function that appends an integer at the end of a word."""
 
@@ -90,7 +90,7 @@ def test_zipping():
 
 
 @pytest.mark.test_id('747bca3c-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_expect_exception():
     """Verify a function raises a specific exception when provided bad input."""
 

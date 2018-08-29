@@ -44,7 +44,7 @@ def steps_setup_teardown_fixture():
 # Test Cases
 # ======================================================================================================================
 @pytest.mark.test_id('747b7b22-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 @pytest.mark.test_case_with_steps
 class TestStepsWithSetupAndTeardown(object):
     """Verify that an automation engineer can create tests with steps and explicit setup/teardown."""
