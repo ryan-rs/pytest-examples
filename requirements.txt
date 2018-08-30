@@ -7,5 +7,4 @@ pytest
 pytest-cov
 pytest-mock
 pytest-helpers-namespace
-pytest-rpc
-rpc-zigzag
+pytest-zigzag
