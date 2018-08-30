@@ -83,7 +83,7 @@ def dyanmic_message_fixture_factory(tmpdir_factory, prefix, suffix):
 # Test Cases
 # ======================================================================================================================
 @pytest.mark.test_id('747ba3e0-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_static_message(static_message_fixture, prefix, message, suffix):
     """Verify that the file contains the correct message."""
 
@@ -92,7 +92,7 @@ def test_static_message(static_message_fixture, prefix, message, suffix):
 
 
 @pytest.mark.test_id('747b9fc6-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_static_message_with_setup_teardown(static_message_with_setup_teardown_fixture, prefix, message, suffix):
     """Verify that the file contains the correct message."""
 
@@ -101,7 +101,7 @@ def test_static_message_with_setup_teardown(static_message_with_setup_teardown_f
 
 
 @pytest.mark.test_id('747b9b84-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 def test_dynamic_message(dyanmic_message_fixture_factory, prefix, suffix):
     """Verify that the file contains the correct message."""
 

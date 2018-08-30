@@ -28,7 +28,7 @@ def steps_setup_fixture():
 # Test Cases
 # ======================================================================================================================
 @pytest.mark.test_id('747c180c-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 @pytest.mark.test_case_with_steps
 class TestSteps(object):
     """Verify that an automation engineer can create tests with steps."""
@@ -50,7 +50,7 @@ class TestSteps(object):
 
 
 @pytest.mark.test_id('747c0b96-aafb-11e8-bfa2-0025227c8120')
-@pytest.mark.jira('K8S-123')
+@pytest.mark.jira('ASC-891')
 @pytest.mark.test_case_with_steps
 class TestStepsWithOnlySetup(object):
     """Verify that an automation engineer can create tests with steps and explicit setup."""
