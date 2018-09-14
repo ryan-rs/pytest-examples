@@ -1,10 +1,11 @@
 flake8
 flake8-filename
-flake8-pytest-mark
+git+https://github.com/ryan-rs/flake8-pytest-mark@feature/ASC-919/enforce_lint_rules_on_test_classes#egg=flake8-pytest-mark
 ipython
 magic-marker
 pytest
 pytest-cov
 pytest-mock
 pytest-helpers-namespace
+git+https://github.com/rcbops/zigzag@master#egg=rpc-zigzag
 pytest-zigzag
