@@ -1,6 +1,6 @@
 flake8
 flake8-filename
-git+https://github.com/ryan-rs/flake8-pytest-mark@feature/ASC-919/enforce_lint_rules_on_test_classes#egg=flake8-pytest-mark
+git+https://github.com/rcbops/flake8-pytest-mark@test_steps_experiment#egg=flake8-pytest-mark
 ipython
 magic-marker
 pytest
