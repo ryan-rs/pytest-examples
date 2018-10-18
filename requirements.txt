@@ -1,11 +1,9 @@
-flake8
+-c constraints.txt
 flake8-filename
-git+https://github.com/rcbops/flake8-pytest-mark@test_steps_experiment#egg=flake8-pytest-mark
+flake8-pytest-mark
 ipython
 magic-marker
-pytest
 pytest-cov
 pytest-mock
 pytest-helpers-namespace
-git+https://github.com/rcbops/zigzag@master#egg=rpc-zigzag
 pytest-zigzag
