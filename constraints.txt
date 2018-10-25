@@ -1,1 +1,2 @@
-flake8-pytest-mark==1.0.0rc2
+flake8-pytest-mark~=1.0
+magic-marker~=1.0
