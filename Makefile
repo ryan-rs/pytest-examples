@@ -42,12 +42,12 @@ clean-venv: check-venv ## remove all packages from current virtual environment
 	@source virtualenvwrapper.sh && wipeenv || echo "Skipping wipe of environment"
 
 lint: ## check style with flake8
-	@flake8 --exclude=*steps*,*inheritance* tests
+	@flake8 tests
 
 test: ## run unit tests quickly with the default Python
-	py.test tests
+	@py.test tests
 
 develop: clean ## install necessary packages to setup a dev environment
-	pip install -r requirements.txt
+	@pip install -r requirements.txt
 
 develop-venv: clean-venv develop ## setup a dev environment after wiping the virtual environment

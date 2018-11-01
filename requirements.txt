@@ -1,9 +1,8 @@
-flake8
+-c constraints.txt
 flake8-filename
 flake8-pytest-mark
 ipython
 magic-marker
-pytest
 pytest-cov
 pytest-mock
 pytest-helpers-namespace

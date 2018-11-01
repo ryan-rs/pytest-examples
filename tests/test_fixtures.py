@@ -64,7 +64,7 @@ def static_message_with_setup_teardown_fixture(tmpdir_factory, prefix, message, 
 
 @pytest.fixture
 def dyanmic_message_fixture_factory(tmpdir_factory, prefix, suffix):
-    """A fixture which provides a static message."""
+    """A fixture which provides a dynamic message."""
 
     filename = tmpdir_factory.mktemp('data').join('dynamic_message.txt').strpath
 

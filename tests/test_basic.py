@@ -99,4 +99,4 @@ def test_expect_exception():
     with pytest.raises(RuntimeError) as exception:
         raise_exception(number)
 
-    assert exception.value.message == 'Number is above one! Number: 3'
+    assert str(exception.value) == 'Number is above one! Number: 3'
