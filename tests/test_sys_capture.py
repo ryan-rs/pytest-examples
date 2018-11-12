@@ -42,16 +42,6 @@ def test_capture_stderr():
     assert False
 
 
-@pytest.mark.test_id('897f51d0-e6ae-11e8-9063-0025227c8120')
-@pytest.mark.jira('ASC-860')
-def test_capture_shell_output():
-    """Verify that messages printed to 'stdout' from subprocess are captured upon failure."""
-
-    subprocess.call('ls')
-
-    assert False
-
-
 @pytest.mark.test_id('ca81d3fc-e699-11e8-b952-0025227c8120')
 @pytest.mark.jira('ASC-860')
 def test_capture_both():
@@ -59,5 +49,15 @@ def test_capture_both():
 
     sys.stdout.write('Print to stdout')
     sys.stderr.write('Print to stderr')
+
+    assert False
+
+
+@pytest.mark.test_id('897f51d0-e6ae-11e8-9063-0025227c8120')
+@pytest.mark.jira('ASC-860')
+def test_capture_shell_output():
+    """Verify that messages printed to 'stdout' from subprocess are captured upon failure."""
+
+    subprocess.call('ls')
 
     assert False
